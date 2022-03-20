@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /usr/nodeapp
 
-# current directory(first ./) to target/working directory(second ./)
+# current directory(first ./ or .) to target/working directory(second ./ or .)
 COPY ./package.json ./
 
 RUN npm install
